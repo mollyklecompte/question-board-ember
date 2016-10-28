@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyBKmiXQkE2j-n6jf7cKAyTOvuU1_Adfa5Y",
-      authDomain: "question-board-1e514.firebaseapp.com",
-      databaseURL: "https://question-board-1e514.firebaseio.com",
-      storageBucket: "question-board-1e514.appspot.com",
+      apiKey: "AIzaSyD46vrYfiMro_R1DD0dmbTKepnW8MInFhs",
+      authDomain: "new-question-board.firebaseapp.com",
+      databaseURL: "https://new-question-board.firebaseio.com",
+      storageBucket: "new-question-board.appspot.com",
       },
 
     APP: {
