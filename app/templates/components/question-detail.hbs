@@ -1,1 +1,7 @@
-{{yield}}
+<h3>{{question.author}} asked:</h3>
+<h2><em>"{{question.content}}"</em></h2>
+<p>{{question.notes}}</p>
+
+<h5>{{question.date}}</h5>
+
+<button {{action 'delete' question}}>Delete Question</button>
