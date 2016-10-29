@@ -4,10 +4,10 @@
 {{new-question saveQuestion2="saveQuestion3"}}
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{#link-to 'question' question.id}}
     <li>
-      {{question.author}} asked: 
+      {{question.author}} asked:
       {{question.content}}
     </li>
     {{/link-to}}

@@ -4,4 +4,11 @@
 
 <h5>{{question.date}}</h5>
 
+<h2>Answers</h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
 <button {{action 'delete' question}}>Delete Question</button>
