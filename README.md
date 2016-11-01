@@ -34,7 +34,7 @@ You will need the following things properly installed on your computer.
 * `ember build --environment production` (production)
 
 ## Known Bugs
-_Cannot update questions or save answers (I know, right?)_
+_None_
 
 
 ## Technologies Used
