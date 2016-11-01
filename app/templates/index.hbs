@@ -5,11 +5,6 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    {{#link-to 'question' question.id}}
-    <li>
-      {{question.author}} asked:
-      {{question.content}}
-    </li>
-    {{/link-to}}
+    {{question-tile question=question}}
   {{/each}}
 </ul>
