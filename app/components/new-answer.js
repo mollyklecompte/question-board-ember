@@ -13,7 +13,7 @@ export default Ember.Component.extend({
      var params = {
        author: this.get('author'),
        date: new Date(),
-       rating: this.get('rating'),
+       rating: parseInt(this.get('rating')),
        content: this.get('content'),
        question: this.get('question')
      };
