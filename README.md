@@ -2,6 +2,10 @@
 
 #### _Question and answer board, 10/28/16_
 
+## Description
+
+A crowdsourced question and answer board where users can post and edit questions of their own, or answer questions posted by others.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
