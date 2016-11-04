@@ -1,3 +1,24 @@
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 12pt;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .jumbotron {
   text-align: center;
 }
@@ -12,6 +33,14 @@
 
 .troll-icon:hover {
   height: 2.75em;
+}
+
+.head-troll {
+  height: 2em;
+}
+
+.head-troll:hover {
+  height: 2.25em;
 }
 
 .glyphicon-fire {
@@ -42,6 +71,19 @@
   text-align: center;
 }
 
+.new-button {
+  font-size: 16pt;
+}
+
+.new-button:hover {
+  font-size: 19pt;
+  color: #F016D6;
+}
+
+.emphasis {
+  font-weight: bolder;
+}
+
 #upvote-button:hover {
   color: #05AB26;
 }
@@ -56,6 +98,7 @@
 
 #question-body {
   padding: 2em;
+  text-align: center;
 }
 
 #fave-button:hover {

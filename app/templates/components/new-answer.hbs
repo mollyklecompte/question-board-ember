@@ -1,5 +1,5 @@
 {{#if addNewAnswer}}
-<h1>New Answer</h1>
+<h2>New Answer</h2>
   <div>
     <form>
       <div class="form-group">
@@ -19,5 +19,5 @@
     </form>
   </div>
 {{else}}
-  <button class="btn btn-info "{{action 'answerFormShow'}}>New Answer</button>
+  <button class="btn vote-button new-button"{{action 'answerFormShow'}}><span class="glyphicon glyphicon-plus" aria-hidden="true">AnswerMe</span></button>
 {{/if}}
