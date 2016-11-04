@@ -1,7 +1,11 @@
 <div id="question">
+  <h3>
   {{#link-to 'question' question.id}}
-  <h3>{{question.content}}</h3>
+    {{question.content}}
   {{/link-to}}
+  {{most-answers question}}
+</h3>
+
   <p><em>By: </em><strong>{{question.author}}</strong></p>
   <p><em>Answers: </em><strong>{{answerCount}}</strong></p>
 </div>
