@@ -27,6 +27,9 @@ export default Ember.Component.extend({
      } else {
        alert("Please fill out all fields");
     }
+    this.set('author', '');
+    this.set('rating', null);
+    this.set('content', '');
    }
   }
 });
