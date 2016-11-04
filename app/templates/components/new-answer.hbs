@@ -14,7 +14,8 @@
         <label for="content">Content</label>
         {{input value=content id="content"}}
       </div>
-      <button clas="btn btn-info" {{action 'saveAnswer'}}>Save</button>
+      <button class="btn btn-info" {{action 'saveAnswer'}}>Save</button>
+      <button class="btn btn-primary" {{action 'answerFormHide'}}>Hide</button>
     </form>
   </div>
 {{else}}

@@ -17,10 +17,11 @@ actions: {
       content: this.get('content'),
       notes: this.get('notes'),
     };
-    if (this.get('author') && this.get('content') &&this.get('notes')) {
+      if (this.get('author') && this.get('content') &&this.get('notes')) {
         this.set('addNewQuestion', false);
         this.sendAction('saveQuestion2', params);
-      } else {
+      }
+      else {
         alert("Please fill out all fields");
       }
     }

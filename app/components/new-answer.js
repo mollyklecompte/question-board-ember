@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     answerFormShow() {
       this.set('addNewAnswer', true);
     },
+    answerFormHide() {
+      this.set('addNewAnswer', false);
+    },
     saveAnswer() {
      var params = {
        author: this.get('author'),
@@ -14,8 +17,13 @@ export default Ember.Component.extend({
        content: this.get('content'),
        question: this.get('question')
      };
-     this.set('addNewAnswer', false);
-     this.sendAction('saveAnswer', params);
+     if (this.get('author') && this.get('content') &&this.get('rating')) {
+       this.set('addNewAnswer', false);
+       this.sendAction('saveAnswer', params);
+     }
+     else {
+       alert("Please fill out all fields");
+    }
    }
   }
 });
