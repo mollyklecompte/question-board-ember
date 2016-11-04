@@ -18,11 +18,13 @@ export default Ember.Component.extend({
        question: this.get('question'),
        votes: 0,
      };
-     if (this.get('author') && this.get('content') &&this.get('rating')) {
+     if (this.get('rating') <0 || this.get('rating') >5) {
+       alert("Please choose a rating between 1 and 5.")
+     }
+     else if (this.get('author') && this.get('content') &&this.get('rating')) {
        this.set('addNewAnswer', false);
        this.sendAction('saveAnswer', params);
-     }
-     else {
+     } else {
        alert("Please fill out all fields");
     }
    }

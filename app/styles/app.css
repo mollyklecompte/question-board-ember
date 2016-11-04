@@ -18,6 +18,9 @@ p {
 body {
   font-family: 'Roboto', sans-serif;
 }
+a:active, a:visited, a:hover, a:link {
+  text-decoration: none;
+}
 
 .jumbotron {
   text-align: center;
