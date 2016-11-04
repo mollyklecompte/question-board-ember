@@ -9,10 +9,12 @@ export default Ember.Component.extend({
       };
       this.sendAction('upVote', answer, params);
     },
-    // downVote(answer) {
-    //   var params = {
-    //     answer.set('votes', answer.get('votes')11)
-    //   };
-    // }
+    downVote(answer) {
+      var params = {
+        votes: answer.set('votes', answer.get('votes')-1)
+      };
+      this.sendAction('downVote', answer, params);
+    },
+
   }
 });
