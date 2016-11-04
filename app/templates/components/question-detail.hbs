@@ -1,3 +1,5 @@
+<button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
+
 <h3>{{question.author}} asked:</h3>
 <h2><em>"{{question.content}}"</em></h2>
 <p>{{question.notes}}</p>
@@ -12,6 +14,3 @@
     {{answer-tile answer=answer}}
   {{/each}}
 </ul>
-
-<button {{action 'delete' question}}>Delete Question</button>
-<br>

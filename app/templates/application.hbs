@@ -1,11 +1,14 @@
-<header>
-  {{#link-to 'index'}}
-    <h2>Q2A</h2>
-  {{/link-to}}
-</header>
-<hr>
-<body>
-  <div class="container">
+<div class="container">
+  <header>
+    <div class="jumbotron">
+      {{#link-to 'index'}}
+        <h1>Q2A</h1>
+      {{/link-to}}
+      <h3><em>Your questions, answered</em></h3>
+    </div>
+  </header>
+
+  <body>
     {{outlet}}
-  </div>
-</body>
+  </body>
+</div>

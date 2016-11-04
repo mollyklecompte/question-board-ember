@@ -1,5 +1,5 @@
 {{#if addNewQuestion}}
-  <h1>New Question</h1>
+  <h2>New Question</h2>
   <div>
     <form>
       <div class="form-group">
@@ -17,9 +17,11 @@
         {{textarea value=notes id="notes"}}
       </div>
 
-      <button {{action 'saveQuestion1'}}>Save</button>
+      <button class="btn btn-info" {{action 'saveQuestion1'}}>Save</button>
+      <button class="btn btn-danger" {{action 'questionFormHide'}}>Hide</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}}>New Question</button>
+<h2>Looking for Answers?</h2>
+  <button id="new-question-button" class="btn btn-info" {{action 'questionFormShow'}}>New Question</button>
 {{/if}}

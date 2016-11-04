@@ -1,11 +1,21 @@
-<h1>Welcome to Q2A question & answer board</h1>
-<h4>Browse the questions posted below, answer a question, or post your own.</h4>
+<div class="welcome">
+  <h1>Welcome to Q2A question & answer board</h1>
+  <h4>Browse the questions posted below, answer a question, or post your own.</h4>
+</div>
 
-{{new-question saveQuestion2="saveQuestion3"}}
-
-<h3>Questions</h3>
-<ul>
-  {{#each model.questions as |question|}}
-    {{question-tile question=question}}
-  {{/each}}
-</ul>
+<hr>
+<div class="row">
+  <div class="col-md-6">
+    <div class="inner-div well">
+      <h2>Questions</h2>
+      {{#each model.questions as |question|}}
+        {{question-tile question=question}}
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="inner-div well">
+      {{new-question saveQuestion2="saveQuestion3"}}
+    </div>
+  </div>
+</div>

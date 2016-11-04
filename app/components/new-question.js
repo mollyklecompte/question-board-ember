@@ -6,6 +6,9 @@ actions: {
   questionFormShow() {
     this.set('addNewQuestion', true);
   },
+  questionFormHide() {
+    this.set('addNewQuestion', false);
+  },
 
   saveQuestion1() {
     var params = {
