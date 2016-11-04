@@ -1,1 +1,8 @@
-{{yield}}
+<h2>Favorite Questions</h2>
+{{#if favoriteQuestions.favoriteQuestions}}
+  {{#each favoriteQuestions.favoriteQuestions as |question|}}
+    {{question.content}}
+  {{/each}}
+{{else}}
+  <h4><em>You haven't added any questions to favorites.</em></h4>
+{{/if}}
