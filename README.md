@@ -1,10 +1,10 @@
-# QNB Question Board
+# Shallow Depths Question Board
 
 #### _Question and answer board, 10/28/16_
 
 ## Description
 
-A crowdsourced question and answer board where users can post and edit questions of their own, or answer questions posted by others.
+A crowdsourced question and answer board where users can post and edit questions of their own, or answer questions posted by others. Users can select their favorite questions, and up or downvote answers. The app displays a troll icon on answers with -4 or less votes, and a flame icon on questions with 5 or more answers.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ _None_
 
 
 ## Technologies Used
-_Javascript, Ember, Node, Bower_
+_Javascript, Ember, Node, Bower, Bootstrap_
 
 ### License
 
