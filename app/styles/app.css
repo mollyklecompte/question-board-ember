@@ -5,3 +5,37 @@
 .welcome {
   text-align: center;
 }
+
+.troll-icon {
+  height: 2.5em;
+}
+
+.troll-icon:hover {
+  height: 2.75em;
+}
+
+.glyphicon-fire {
+  color: #ed4209;
+}
+
+.glyphicon-fire:hover {
+  font-size: 1.4em;
+}
+
+.vote-button {
+  background:rgba(255,255,255,0);
+  font-weight: bolder;
+  font-size: 12pt;
+}
+
+.vote-button:hover {
+  font-size: 14pt;
+}
+
+#upvote-button:hover {
+  color: #05AB26;
+}
+
+#downvote-button:hover {
+  color: #ed4209;
+}

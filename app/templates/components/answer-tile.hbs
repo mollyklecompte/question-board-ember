@@ -4,7 +4,12 @@
   <p>{{answer.content}}</p>
   <h5>{{answer.date}}</h5>
   <h5>Votes: {{answer.votes}}</h5>
-  <button class="btn btn-info" {{action 'upVote' answer}}>Vote Up</button>
-  <button class="btn btn-danger" {{action 'downVote' answer}}>Vote Down</button>
+
+  <button type="button" class="btn btn-large vote-button" id="upvote-button" {{action 'upVote' answer}}>
+  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">UpVote</span>
+  </button>
+  <button type="button" class="btn btn-large vote-button" id="downvote-button" {{action 'downVote' answer}}>
+  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">DownVote</span>
+  </button>
 
 </div>

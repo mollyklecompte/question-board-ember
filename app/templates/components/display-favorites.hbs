@@ -1,7 +1,9 @@
 <h2>Favorite Questions</h2>
 {{#if favoriteQuestions.favoriteQuestions}}
   {{#each favoriteQuestions.favoriteQuestions as |question|}}
-    {{question.content}}
+    {{#link-to 'question' question.id}}
+      <h4>{{question.content}}</h4>
+    {{/link-to}}
   {{/each}}
 {{else}}
   <h4><em>You haven't added any questions to favorites.</em></h4>
