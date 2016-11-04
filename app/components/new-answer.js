@@ -19,7 +19,7 @@ export default Ember.Component.extend({
        votes: 0,
      };
      if (this.get('rating') <0 || this.get('rating') >5) {
-       alert("Please choose a rating between 1 and 5.")
+       alert("Please choose a rating between 1 and 5.");
      }
      else if (this.get('author') && this.get('content') &&this.get('rating')) {
        this.set('addNewAnswer', false);
