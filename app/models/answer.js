@@ -6,4 +6,5 @@ export default DS.Model.extend({
   content: DS.attr(),
   rating: DS. attr(),
   question: DS.belongsTo('question', {async: true}),
+  votes: DS.attr(),
 });

@@ -15,7 +15,8 @@ export default Ember.Component.extend({
        date: new Date(),
        rating: parseInt(this.get('rating')),
        content: this.get('content'),
-       question: this.get('question')
+       question: this.get('question'),
+       votes: 0,
      };
      if (this.get('author') && this.get('content') &&this.get('rating')) {
        this.set('addNewAnswer', false);
