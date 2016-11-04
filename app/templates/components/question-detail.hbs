@@ -1,6 +1,7 @@
 <br>
-<button class="btn btn-danger pull-left" {{action 'delete' question}}>Delete Question</button>
-
+<button id="trash-button" class="btn vote-button pull-left" {{action 'delete' question}}><span class="glyphicon glyphicon-trash" aria-hidden="true">Delete</span></button>
+<br><br>
+<button id="fave-button" class="btn vote-button pull-left" {{action 'faveThisQuestion' question}}><span class="glyphicon glyphicon-star" aria-hidden="true">Favorite</span></button>
 
 <div class="question-answers" id="question-body">
   <h3 class="center-text">{{question.author}} asked:</h3>
@@ -8,14 +9,9 @@
   <p>{{question.notes}}</p>
 
   <h5 id="question-date" >{{question.date}}</h5>
-  <button id="fave-button" class="btn btn-info]" {{action 'faveThisQuestion' question}}>Add Question to Favorites</button>
 
 </div>
-
-
-
 <hr>
-
 
 <h2 id="answer-head">Answers</h2>
 <div class="question-answers">
