@@ -1,18 +1,27 @@
 <br>
-<button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
+<button class="btn btn-danger pull-left" {{action 'delete' question}}>Delete Question</button>
 
-<h3>{{question.author}} asked:</h3>
-<h2><em>"{{question.content}}"</em></h2>
-<p>{{question.notes}}</p>
 
-<h5>{{question.date}}</h5>
-<button class="btn btn-info" {{action 'faveThisQuestion' question}}>Add Question to Favorites</button>
+<div class="question-answers" id="question-body">
+  <h3 class="center-text">{{question.author}} asked:</h3>
+  <h2 class="center-text"><em>"{{question.content}}"</em></h2>
+  <p>{{question.notes}}</p>
+
+  <h5 id="question-date" >{{question.date}}</h5>
+  <button id="fave-button" class="btn btn-info]" {{action 'faveThisQuestion' question}}>Add Question to Favorites</button>
+
+</div>
+
+
 
 <hr>
 
-<h2>Answers</h2>
-<ul>
-  {{#each sortedAnswers as |answer|}}
-    {{answer-tile answer=answer upVote='upVote' downVote="downVote"}}
-  {{/each}}
-</ul>
+
+<h2 id="answer-head">Answers</h2>
+<div class="question-answers">
+  <ul>
+    {{#each sortedAnswers as |answer|}}
+      {{answer-tile answer=answer upVote='upVote' downVote="downVote"}}
+    {{/each}}
+  </ul>
+</div>

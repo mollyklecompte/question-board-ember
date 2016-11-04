@@ -32,10 +32,32 @@
   font-size: 14pt;
 }
 
+.question-answers {
+  text-align: justify;
+  margin: 0 auto;
+  width: 50em;
+}
+
+.center-text {
+  text-align: center;
+}
+
 #upvote-button:hover {
   color: #05AB26;
 }
 
 #downvote-button:hover {
   color: #ed4209;
+}
+
+#answer-head {
+  text-align: center;
+}
+
+#question-body {
+  padding: 2em;
+}
+
+#fave-button {
+
 }
