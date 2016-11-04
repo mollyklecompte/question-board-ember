@@ -24,7 +24,9 @@ body {
 }
 
 .welcome {
-  text-align: center;
+  text-align: justify;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .troll-icon {
